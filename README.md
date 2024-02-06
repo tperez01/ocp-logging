@@ -6,5 +6,6 @@ $ oc apply -f <filename>.yaml
 After that we need to create the ClusterLogging object
 
 We create the ClusterForwarder:
-  - we create a secret with our Base64 encoded Splunk HEC token: $ oc -n openshift-logging create secret generic vector-splunk-secret --from-literal hecToken=<HEC_Token>
+  - we create a secret with our Base64 encoded Splunk HEC token:
+    $ oc -n openshift-logging create secret generic vector-splunk-secret --from-literal hecToken=<HEC_Token>
   - we create the object
