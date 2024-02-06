@@ -12,9 +12,9 @@ spec:
   collection:
     type: vector
     tolerations:
-    - key: "logging"
-      operator: "Exists"
-      effect: "NoExecute"
+    - key: logging
+      operator: Exists
+      effect: NoExecute
       tolerationSeconds: 6000
     resources:
       limits:
