@@ -25,7 +25,7 @@ spec:
     nodeSelector:
       collector: needed  
   visualization:
-    type: ocpConsole 
+    type: ocp-Console 
     # ocpConsole: 
     #   logsLimit: {}
     #   timeout: {}
