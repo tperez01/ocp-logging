@@ -10,4 +10,6 @@ We create the ClusterForwarder:
     
     $ oc -n openshift-logging create secret generic vector-splunk-secret --from-literal hecToken=<HEC_Token>
     
-  - we create the object
+  - we create the object CusterForwarder
+
+    $ oc apply -f ClusterForwarder.yaml
