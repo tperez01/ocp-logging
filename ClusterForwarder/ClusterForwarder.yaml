@@ -10,7 +10,7 @@ spec:
       secret:
         name: vector-splunk-secret 
       type: splunk 
-      url: <http://your.splunk.hec.url:8088> 
+      url: https://prd-p-8hq1p.splunkcloud.com:8088
   pipelines: 
     - inputRefs:
         # - application
