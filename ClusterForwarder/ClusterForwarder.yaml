@@ -11,6 +11,8 @@ spec:
         name: vector-splunk-secret 
       type: splunk 
       url: https://prd-p-8hq1p.splunkcloud.com:8088
+      tls:
+        insecureSkipVerify: true
   pipelines: 
     - inputRefs:
         # - application
