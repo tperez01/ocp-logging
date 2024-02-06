@@ -1,4 +1,4 @@
-Installation of ocp logging
+INSTALLATION OF OCP LOGGING
 
 First we need to install the logging operator into our openshift cluster, for that we mus log into it with the CLI and then apply the files hosted in the logging-operator folder with the command 
 $ oc apply -f <filename>.yaml
