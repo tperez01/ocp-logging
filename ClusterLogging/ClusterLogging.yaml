@@ -1,0 +1,31 @@
+apiVersion: logging.openshift.io/v1
+kind: ClusterLogging
+metadata:
+  name: instance 
+  namespace: openshift-logging 
+spec:
+  managementState: Managed
+  # logStore:
+  #   type: lokistack 
+  #   lokistack: 
+  #     name: logging-loki
+  collection:
+    type: vector
+    tolerations:
+    - key: "logging"
+      operator: "Exists"
+      effect: "NoExecute"
+      tolerationSeconds: 6000
+    resources:
+      limits:
+        memory: 1Gi
+      requests:
+        cpu: 100m
+        memory: 1Gi
+    nodeSelector:
+      collector: needed  
+  visualization:
+    type: ocpConsole 
+    # ocpConsole: 
+    #   logsLimit: {}
+    #   timeout: {}
